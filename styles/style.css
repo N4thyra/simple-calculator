@@ -29,6 +29,7 @@ h3 {
 
 .container {
   width: 300px;
+  min-height: 415px;
   margin: 50px auto;
   background-color: #02AAB0;
 }
