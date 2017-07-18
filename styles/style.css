@@ -29,7 +29,6 @@ h3 {
 
 .container {
   width: 300px;
-  height: 420px;
   margin: 50px auto;
   background-color: #02AAB0;
 }
@@ -94,6 +93,11 @@ h3 {
 #special {
   width: 90%;
 }
+
+#special:active {
+  background-color: #cd5500;
+}
+
 
 #error {
   margin: 10px 0 0 0;
