@@ -1,5 +1,6 @@
 const display = $('#display'),
       history = $('#history'),
+      errHandler = $('#error'),
       symbol = ['+', '-', '÷', '×'];
 
 let first = [],
@@ -16,7 +17,8 @@ function calc() {
 
   // selecting the right element
     $('h3').on('click', (e) => {
-      $('#error').html('');
+
+      errHandler.html('');
 
       isClicked = false;
       // get the value of a current element, and store it in variable
@@ -66,7 +68,7 @@ function calc() {
       result = [];
       data = [];
       operator = '';
-      value = '';
+      value = null;
       a = 0;
       b = 0;
       console.log('-------------');
@@ -96,7 +98,7 @@ function calc() {
       first[0] === undefined && operator !== ''
       ) {
         clearScreen();
-        $('#error').html('Invalid Operation -- Restarting App');
+        errHandler.html('Invalid Operation -- Restarting App');
       }
 
       if(first[0] === '' && result[0] === undefined) {
@@ -160,7 +162,7 @@ function calc() {
     function showHistory(data) {
       let output = '';
       for(let i = 0; i < data.length; i++) {
-        output += `${data[i]}<br>`;
+        output += `<p class='inside-box'>${data[i]}</p>`;
       }
       return output;
     }

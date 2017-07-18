@@ -3,6 +3,13 @@
   padding: 0;
 }
 
+body {
+  background: #02AAB0;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #00CDAC, #02AAB0);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #00CDAC, #02AAB0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
 h1 {
   text-align: center;
 }
@@ -10,7 +17,9 @@ h1 {
 p {
   padding-top: 10px;
   margin: 0;
+  font-size: 1.5em;
   text-align: center;
+  color: white;
 }
 
 h3 {
@@ -20,26 +29,30 @@ h3 {
 
 .container {
   width: 300px;
+  height: 420px;
   margin: 50px auto;
-  background-color: lightblue;
+  background-color: #02AAB0;
 }
 
 .history {
-  padding: 10px 0 10px 0;
-  background-color: white;
+  background-color: #00c9cd;
   text-align: center;
   margin: 20px auto 0 auto;
-  border: 1px dotted black;
+  border: 10px solid #02AAB0;;
+  box-sizing: border-box;
   min-height: 50px;
   width: 300px;
 }
 
 .display {
+  font-size: 2em;
   display: inline-block;
   padding: 0 10px;
   overflow-x: auto;
   margin: 10px 5% 0 5%;
-  background-color: white;
+  background-color: #00c9cd;
+  font-weight: 800;
+  color: white;
   text-align: right;
   line-height: 50px;
   height: 50px;
@@ -60,6 +73,22 @@ h3 {
   background-color: white;
   width: 21.7%;
   display: inline-block;
+}
+
+.body .field:active {
+  background-color: #00CDAC;
+  width: 21.7%;
+  display: inline-block;
+}
+
+.inside-box {
+  font-size: 1em;
+  margin: 0px;
+  padding: 0px;
+}
+
+.inside-box:nth-of-type(2n) {
+  background-color: #00CDAC;
 }
 
 #special {
