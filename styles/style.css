@@ -10,10 +10,6 @@ body {
 
 }
 
-h1 {
-  text-align: center;
-}
-
 p {
   padding-top: 10px;
   margin: 0;
@@ -22,41 +18,39 @@ p {
   color: white;
 }
 
-h3 {
-  font-weight: 800;
-  font-size: 1.5em;
-}
-
 .container {
   width: 300px;
-  min-height: 415px;
-  margin: 50px auto;
+  min-height: 395px;
+  margin: 0 auto;
   background-color: #02AAB0;
+  user-select: none;
+  cursor: pointer;
 }
 
-.history {
+.log {
   background-color: #00c9cd;
-  text-align: center;
-  margin: 20px auto 0 auto;
-  border: 10px solid #02AAB0;;
+  margin: 1% auto 0 auto;
+  border-top: 10px solid #02AAB0;;
+  border-left: 10px solid #02AAB0;;
+  border-right: 10px solid #02AAB0;;
   box-sizing: border-box;
-  min-height: 50px;
-  width: 300px;
+  height: 50px;
+  width: 95.4%;
+  overflow: auto;
 }
 
-.display {
+.screen {
   font-size: 2em;
-  display: inline-block;
   padding: 0 10px;
   overflow-x: auto;
-  margin: 10px 5% 0 5%;
+  margin: auto;
   background-color: #00c9cd;
   font-weight: 800;
   color: white;
   text-align: right;
   line-height: 50px;
   height: 50px;
-  width: 85%;
+  width: 82%;
 }
 
 .body {
@@ -65,43 +59,75 @@ h3 {
 }
 
 .group-buttons {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-left: 15px;
+  line-height: 50px;
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
-.body .field {
+.group-buttons > div {
+  margin: 2px;
   background-color: white;
-  width: 21.7%;
-  display: inline-block;
+  height: 50px;
+  width: 22.3%;
+  float: left;
+  border-radius: 5px;
 }
 
-.body .field:active {
+.group-buttons > div:active {
   background-color: #00CDAC;
-  width: 21.7%;
-  display: inline-block;
+  width: 22.3%;
 }
 
 .inside-box {
   font-size: 1em;
-  margin: 0px;
+  margin-left: 10px;
   padding: 0px;
+  text-align: left;
 }
 
 .inside-box:nth-of-type(2n) {
   background-color: #00CDAC;
 }
 
-#special {
-  width: 90%;
+#clear {
+  margin-top: 10px;
+  width: 30.5%;
+  background-color: #f45042;
 }
 
-#special:active {
-  background-color: #cd5500;
+#clear:active {
+  background-color: #f44141;
 }
 
+#reset {
+  margin-top: 10px;
+  width: 30.5%;
+  background-color: #d0f441;
+}
 
-#error {
-  margin: 10px 0 0 0;
-  padding: 0;
-  text-align: center;
+#reset:active {
+  background-color: #a3f441;
+}
+
+#arrow {
+  margin-top: 10px;
+  background-color: #f4ee41;
+  width: 30%;
+}
+
+#arrow:active {
+  background-color: #f4d941;
+}
+
+#result {
+  width: 22.3%;
+  height: 50px;
+  background-color:  #4179f4;
+  color: white;
+  font-weight: bold;
+}
+
+#result:active {
+  background-color: #4158f4;
 }

@@ -6,33 +6,33 @@
     <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
-    <p>History Log</p>
-    <div id="history" class="history"></div>
-    <p id="error"></p>
     <div class="container">
-      <div id="display" class="display"></div>
-      <div class="body">
-        <div class="group-buttons">
-          <div class="field"><h3>7</h3></div>
-          <div class="field"><h3>8</h3></div>
-          <div class="field"><h3>9</h3></div>
-          <div class="field"><h3>&divide;</h3></div>
-          <div class="field"><h3>4</h3></div>
-          <div class="field"><h3>5</h3></div>
-          <div class="field"><h3>6</h3></div>
-          <div class="field"><h3>&times;</h3></div>
-          <div class="field"><h3>1</h3></div>
-          <div class="field"><h3>2</h3></div>
-          <div class="field"><h3>3</h3></div>
-          <div class="field"><h3>-</h3></div>
-          <div class="field"><h3>0</h3></div>
-          <div class="field"><h3>.</h3></div>
-          <div class="field"><h3>=</h3></div>
-          <div class="field"><h3>+</h3></div>
-          <div id="special" class="field"><h3>CE</h3></div>
+      <div id="log" class="log"></div>
+        <div id="screen" class="screen"></div>
+        <div class="body">
+          <div class="group-buttons">
+            <div id="reset" class="reset">Reset</div>
+            <div id="clear" class="clear">C</div>
+            <div id="arrow" class="arrow">&larr;</div>
+            <div class="nums">7</div>
+            <div class="nums">8</div>
+            <div class="nums">9</div>
+            <div class="ops">+</div>
+            <div class="nums">4</div>
+            <div class="nums">5</div>
+            <div class="nums">6</div>
+            <div class="ops">-</div>
+            <div class="nums">1</div>
+            <div class="nums">2</div>
+            <div class="nums">3</div>
+            <div class="ops">&divide;</div>
+            <div class="nums">0</div>
+            <div class="ops">.</div>
+            <div class="ops">&times;</div>
+            <div id="result" class="equal">=</div>
+          </div>
         </div>
       </div>
-    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="scripts/script.js"></script>
   </body>
