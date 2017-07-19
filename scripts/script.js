@@ -1,5 +1,3 @@
-$('document').ready(function() {
-
   const display = $('#display'),
         history = $('#history'),
         errHandler = $('#error'),
@@ -188,4 +186,3 @@ $('document').ready(function() {
 
       // init app
       calc();
-  });
