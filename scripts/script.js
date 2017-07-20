@@ -54,6 +54,7 @@ dot.on('click', function() {
 
   for(let i = 0; i < string.length; i++) {
     if(string[i] === '.') counter++;
+    if(string[i] === '-') counter = 0;
     if(string[i] === '+') counter = 0;
     if(string[i] === '*') counter = 0;
     if(string[i] === '÷') counter = 0;
